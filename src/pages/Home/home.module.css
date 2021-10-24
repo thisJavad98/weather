@@ -1,0 +1,97 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  height: 60%;
+  border-radius: 10px;
+
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #232526,
+    #414345
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #232526,
+    #414345
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 2rem;
+}
+.title {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
+.desc {
+  margin-top: 40px;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.589);
+  font-size: larger;
+  line-height: 37px;
+  text-align: center;
+}
+.icon1 {
+  animation: icon1Change 8s infinite 0.5s ease-in;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  position: absolute;
+  top: 2px;
+  left: 12px;
+}
+@keyframes icon1Change {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(275deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.icon2 {
+  animation: icon2Change 8s infinite 0.5s ease-in;
+  font-size: 120px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+@keyframes icon2Change {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(275deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
