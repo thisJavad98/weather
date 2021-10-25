@@ -12,17 +12,7 @@ import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CustomButton from "../../components/Button/Button.js";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiOutlinedInput-root": {
-      color: "white",
-    },
-  },
-}));
-
 const Login = () => {
-  
-
   useEffect(() => {
     document.title = "Login";
   }, []);
@@ -41,9 +31,42 @@ const Login = () => {
           <div className={classes.icon}>
             <FaUserCircle />
           </div>
-          <TextField label="User Name" variant="outlined" />
-          <TextField label="Password" variant="outlined" />
-          <CustomButton title="Login" />
+          <div style={{ marginBottom: "12px", marginTop: "35px" }}>
+            <TextField
+              className={classes.input}
+              label="User Name"
+              variant="outlined"
+            />
+          </div>
+          <TextField
+            className={classes.input}
+            label="Password"
+            variant="outlined"
+          />
+          <div style={{ marginTop: "40px" }}>
+            <CustomButton title="Login" />
+          </div>
+          <div className={classes.signupCard}>
+            <Link
+              to="/rest-password"
+              style={{
+                textDecoration: "none",
+                color: "rgba(228, 179, 116, 0.911)",
+              }}
+            >
+              <Typography>Forgot Password</Typography>
+            </Link>
+            <Link
+              to="/signup"
+              style={{
+                textDecoration: "none",
+                color: "rgba(228, 179, 116, 0.911)",
+              }}
+            >
+              {" "}
+              <Typography>Signup</Typography>
+            </Link>
+          </div>
         </Grid>
       </Grid>
     </>

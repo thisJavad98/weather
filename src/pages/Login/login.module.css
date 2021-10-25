@@ -27,12 +27,26 @@
   height: 60%;
 }
 .icon {
-  font-size: 100px;
+  margin-top: 3px;
+  font-size: 120px;
   color: white;
-  margin-top: 10px;
 }
 .backIcon {
   position: absolute;
   top: 30px;
   left: 30px;
+}
+.input {
+  width: 400px;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+}
+.signupCard {
+  width: 40%;
+}
+.signupCard {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
