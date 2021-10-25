@@ -39,7 +39,7 @@
   text-align: center;
 }
 .icon1 {
-  animation: icon1Change 8s infinite 0.5s ease-in;
+  animation: icon1Change 8s infinite 0s ease-in;
   color: rgb(255, 255, 255);
   font-size: 100px;
   position: absolute;
@@ -65,7 +65,7 @@
   }
 }
 .icon2 {
-  animation: icon2Change 8s infinite 0.5s ease-in;
+  animation: icon2Change 8s infinite 0s ease-in;
   font-size: 120px;
   color: rgb(255, 255, 255);
   position: absolute;
