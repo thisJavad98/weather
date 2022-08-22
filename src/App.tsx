@@ -8,8 +8,24 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { createTheme, CssBaseline, ThemeProvider, Box } from "@mui/material";
 
 function App() {
-  
-  const theme = createTheme();
+  const theme = createTheme({
+    shape: {
+      borderRadius: 8,
+    },
+    palette: {
+      mode: "light",
+      primary: {
+        main: "#70afce",
+      },
+      secondary: {
+        main: "#a5def1",
+      },
+      background: {
+        default: "#ffffff",
+        paper: "#d3eff8",
+      },
+    },
+  });
 
   return (
     <ThemeProvider theme={theme}>
