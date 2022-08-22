@@ -26,7 +26,7 @@ const WeatherContent = () => {
           height={"100%"}
           width={"80%"}
         >
-          <img height={"70%"} src={"/assets/svg/Weather.svg"} />
+          <img height={"70%"} src={"/assets/svg/Weather2.svg"} />
         </Grid>
         <Grid
           height={"100%"}
