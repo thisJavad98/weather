@@ -20,15 +20,6 @@ const WeatherContent = () => {
         direction={"row"}
       >
         <Grid
-          display={"flex"}
-          alignItems={"center"}
-          justifyContent={"center"}
-          height={"100%"}
-          width={"80%"}
-        >
-          <img height={"70%"} src={"/assets/svg/Weather2.svg"} />
-        </Grid>
-        <Grid
           height={"100%"}
           display={"flex"}
           alignItems={"center"}
@@ -36,6 +27,15 @@ const WeatherContent = () => {
           width={"100%"}
         >
           <WeatherMain />
+        </Grid>
+        <Grid
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          height={"100%"}
+          width={"80%"}
+        >
+          <img height={"70%"} src={"/assets/svg/Weather2.svg"} />
         </Grid>
       </Grid>
     </Box>
