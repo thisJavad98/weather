@@ -10,7 +10,7 @@ const WeatherContent = () => {
   const classes = useStyles();
 
   return (
-    <Box sx={{ height: "100vh", width: "100vw" }}>
+    <Box width={"100%"} height={"100%"}>
       <Grid
         height={"100%"}
         width={"100%"}
