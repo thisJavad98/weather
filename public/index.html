@@ -10,9 +10,12 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -28,19 +31,65 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Weather App</title>
+
+    <style>
+      .splash {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fc9c3c;
+      }
+
+      .icon {
+        font-size: xx-large;
+        font-family: "Raleway";
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div id="loader" class="splash">
+      <img
+        src="data:image/png;base64,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"
+      />
+      <div class="icon">Weather App</div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script>
+      try {
+        var query = window.location.search;
+        query = query.substr(1);
+        query = query.split("&");
+        var primaryColor = query[0].split("=")[1];
+        var loader = document.querySelector("#loader");
+        loader.style.background = "#" + primaryColor;
+      } catch (error) {}
+      var root = document.querySelector("#root");
+      root.style.display = "none";
+      function docReady(fn) {
+        if (
+          document.readyState === "complete" ||
+          document.readyState === "interactive"
+        ) {
+          fn();
+        } else {
+          document.addEventListener("DOMContentLoaded", fn);
+        }
+      }
+      docReady(function () {
+        var loader = document.querySelector("#loader");
+        var root = document.querySelector("#root");
+        setTimeout(function () {
+          loader.style.display = "none";
+          root.style.display = "";
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
